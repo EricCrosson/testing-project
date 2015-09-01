@@ -1,4 +1,4 @@
-$latex = 'latex -shell-esc -interaction=nonstopmode %O \\\def\\\ispdf{1} \\\input %S';
+$latex = 'latex -shell-escape -interaction=nonstopmode %O \\\def\\\ispdf{1} \\\input %S';
 $pdflatex = 'htlatex %S "myfonts, -css, NoFonts"';
 $pdf_mode = 2;
 $view = 'pdf';
