@@ -1,0 +1,6 @@
+*.dvi
+*.ps
+*.pdf
+*.tex
+auto
+_minted*
