@@ -38,14 +38,32 @@
 \hypersetup{
   pdfkeywords={},
   pdfsubject={Problem set regarding set computations}}
+\newcounter{problem}
+\newcounter{solution}
+
+\newcommand\Problem{%
+  \stepcounter{problem}%
+  \textbf{\theproblem.}~%
+  \setcounter{solution}{0}%
+}
+
+\newcommand\TheSolution{%
+  \textbf{Solution:}\\%
+}
+
+\newcommand\ASolution{%
+  \stepcounter{solution}%
+  \textbf{Solution \thesolution:}\\%
+}
+\parindent 0in
+\parskip 1em
 \begin{document}
 \maketitle
 \surroundwithmdframed{minted}
-\begin{enumerate}
-\item We are given that $P(A) = 0.55, P(B^c) = 0.45$, and $P(A \cup{} B) =
+\Problem{} We are given that $P(A) = 0.55, P(B^c) = 0.45$, and $P(A \cup{} B) =
   0.85$. Determine $P(B)$ and $P(A \cap{} B)$.
   
-\item Let $A$ and $B$ be two sets.
+\Problem{} Let $A$ and $B$ be two sets.
 
 \begin{enumerate}[(a)]
   \item Show that ${(A^c \cap{} B^c)}^c = A \cup{} B$ and ${(A^c \cup{} B^c)}^c = A \cap{} B$.
@@ -55,7 +73,7 @@
     and verify that the equalities hold.
 \end{enumerate}
 
-\item Alice and Bob each choose at random a number between zero and two. We
+\Problem{} Alice and Bob each choose at random a number between zero and two. We
   assume a uniform probability law under which the probability of an event is
   proportional to its area. Consider the following events:
   
@@ -68,16 +86,15 @@
 
 Find the probabilities $P(A), P(B), P(A \cap{} B), P(C), P(D), P(A \cap{} D)$.
 
-\item Show the formula $P\((A \cap{} B) \cup{} (A \cap{} B)\) = P (A) + P (B) -
-  2P (A \cup{} B)$, which gives the probability that at least one of the events
+\Problem{} Show the formula $P \left( (A \cap{} B) \cup{} (A \cap{} B) \right) = P (A) + P (B) - 2P (A \cup{} B)$, which gives the probability that at least one of the events
   $A$ and $B$ will occur.
   
-\item A person has forgotten the last digit of a telephone number, so he dials
+\Problem{} A person has forgotten the last digit of a telephone number, so he dials
   the number with the last digit randomly chosen. How many times does he have to
   dial (not counting repetitions) in order that the probability of dialing the
   correct number is more than $0.5?$
   
-\item We roll two fair 6-sided dice. Each one of the 36 possible outcomes is
+\Problem{} We roll two fair 6-sided dice. Each one of the 36 possible outcomes is
   assumed to be equally likely. 
 
 \begin{enumerate}[(a)]
@@ -89,5 +106,4 @@ Find the probabilities $P(A), P(B), P(A \cap{} B), P(C), P(D), P(A \cap{} D)$.
     probability that at least one die is a 6.
 \end{enumerate}
 
-\end{enumerate}
 \end{document}
