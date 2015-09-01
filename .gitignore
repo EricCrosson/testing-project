@@ -3,4 +3,4 @@
 *.pdf
 *.tex
 auto
-_minted*
+_minted-*
