@@ -1,6 +1,10 @@
 *.dvi
 *.ps
 *.pdf
-*.tex
 auto
 _minted-*
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out

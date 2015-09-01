@@ -17,6 +17,7 @@ install:
     - sudo getnonfreefonts-sys garamond
 script: 
     - latexmk
+    - latexmk -pdf
 after_success:
     - git config --global user.email ${GIT_EMAIL}
     - git config --global user.name ${GIT_NAME}

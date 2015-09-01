@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{caption}
+\usepackage{minted}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{fancyvrb}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{subcaption}
+\usepackage{mdframed}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\usepackage[utf8]{inputenc}
+\newcommand{\todo}{{\LARGE \emph{\color{red}TODO}}}
+\author{Eric Crosson}
+\date{Monday August 31, 2015}
+\title{Problem Set 1}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={Problem set regarding set computations}}
+\begin{document}
+\maketitle
+\surroundwithmdframed{minted}
+\begin{enumerate}
+\item We are given that $P(A) = 0.55, P(B^c) = 0.45$, and $P(A \cup{} B) =
+  0.85$. Determine $P(B)$ and $P(A \cap{} B)$.
+  
+\item Let $A$ and $B$ be two sets.
+
+\begin{enumerate}[(a)]
+  \item Show that ${(A^c \cap{} B^c)}^c = A \cup{} B$ and ${(A^c \cup{} B^c)}^c = A \cap{} B$.
+  \item Consider rolling a six-sided die once. Let $A$ be the set of outcomes
+    where an odd number comes up. Let $B$ be the set of outcomes where a 1 or a
+    2 comes up. Calculate the sets on both sides of the equalities in part (a),
+    and verify that the equalities hold.
+\end{enumerate}
+
+\item Alice and Bob each choose at random a number between zero and two. We
+  assume a uniform probability law under which the probability of an event is
+  proportional to its area. Consider the following events:
+  
+\begin{enumerate}[A:]
+  \item The magnitude of the difference of the two numbers is greater than $\frac{1}{3}$.
+  \item At least one of the numbers is greater than $\frac{1}{3}$.
+  \item The two numbers are equal.
+  \item Alice's number is greater than $\frac{1}{3}$.
+\end{enumerate}
+
+Find the probabilities $P(A), P(B), P(A \cap{} B), P(C), P(D), P(A \cap{} D)$.
+
+\item Show the formula $P\((A \cap{} B) \cup{} (A \cap{} B)\) = P (A) + P (B) -
+  2P (A \cup{} B)$, which gives the probability that at least one of the events
+  $A$ and $B$ will occur.
+  
+\item A person has forgotten the last digit of a telephone number, so he dials
+  the number with the last digit randomly chosen. How many times does he have to
+  dial (not counting repetitions) in order that the probability of dialing the
+  correct number is more than $0.5?$
+  
+\item We roll two fair 6-sided dice. Each one of the 36 possible outcomes is
+  assumed to be equally likely. 
+
+\begin{enumerate}[(a)]
+  \item Find the probability that doubles were rolled.
+  \item Given that the roll resulted in a sum of 4 or less, find the conditional
+    probability that doubles were rolled.
+  \item Find the probability taht at least one die is a 6.
+  \item Given that the two dice land on different numbers, find the conditional
+    probability that at least one die is a 6.
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
